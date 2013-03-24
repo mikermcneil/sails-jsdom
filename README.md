@@ -28,6 +28,9 @@ Page.find({
 	
 	// Page object contains some useful stuff
 	console.log(page);
+
+	// Most relevantly, you can access the window object
+	console.log(page.window);
 });
 ```
 
