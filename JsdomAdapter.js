@@ -1,3 +1,4 @@
+var _ = require("underscore");
 var request = require("request");
 var jsdom = require("jsdom");
 
@@ -21,7 +22,6 @@ var adapter = {
 			url: collection.url
 			// method: collection.method || ''
 		};
-		cb();
 	},
 
 
@@ -76,5 +76,5 @@ var adapter = {
 
 };
 
-_.bindAll(adapter);
+_.bindAll(adapter, 'registerCollection', 'find');
 module.exports = adapter;
